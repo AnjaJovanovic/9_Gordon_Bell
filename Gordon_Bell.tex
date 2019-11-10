@@ -1,20 +1,22 @@
-% !TEX encoding = UTF-8 Unicode
-
 \documentclass[a4paper]{article}
 
 \usepackage{color}
 \usepackage{url}
-\usepackage[T2A]{fontenc} % enable Cyrillic fonts
-\usepackage[utf8]{inputenc} % make weird characters work
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} 
 \usepackage{graphicx}
 
+
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
 \usepackage[english,serbian]{babel}
-%\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
 
 \usepackage[unicode]{hyperref}
 \hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
 
-%\newtheorem{primer}{Пример}[section] %ćirilični primer
+
 \newtheorem{primer}{Primer}[section]
 
 \begin{document}
@@ -22,11 +24,11 @@
 \title{Gordon Bel\\ \small{Seminarski rad u okviru kursa\\Tehničko i naučno pisanje\\ Matematički fakultet}}
 
 \author{Darija Eremija, Katarina Kilibarda, Dejan Živković, Anja Jovanović\\ darijae99@gmail.com, kaja.kilibarda@gmail.com, \\ dejan199930@gmail.com, jovanovic.anja99@gmail.com}
-\date{24.~oktobar 2017.}
+\date{10.~novembar 2019.}
 \maketitle
 
 \abstract{
-Č. Gordon Bel (engl. C. Gordon Bell; Kirksvil 19. avgust 1934) je Američki inženjer elektrotehnike i rukovodilac. Zaposlen u korporaciji digitalne opreme(engl. Digital Equipment Corporation) 1960-1966,Bel je dizajnirao nekoliko njihovih PDP mašina, a kasnije je postao potpredsednik inžinjeringa 1972-1983, nadgledajući razvoj VAKS-a.  Belova kasnija karijera uključuje preduzetnika, investitora, pomoćnika direktora  NSF-a za računarstvo i informacionu nauku i inženjerstvo 1986-1987, i emeritus istraživača u Majkrosoft Risrč-u, 1995–2015.
+Č. Gordon Bel (engl. C. Gordon Bell; Kirksvil 19. avgust 1934) je Američki inženjer elektrotehnike i rukovodilac. Zaposlen u korporaciji digitalne opreme(engl. Digital Equipment Corporation) 1960-1966,Bel je dizajnirao nekoliko njihovih PDP mašina, a kasnije je postao potpredsednik inžinjeringa 1972-1983, nadgledajući razvoj VAKS-a.  Belova kasnija karijera uključuje preduzetnika, investitora, pomoćnika direktora NSF-a za računarstvo i informacionu nauku i inženjerstvo 1986-1987, i emeritus istraživača u Majkrosoft Risrč-u, 1995–2015.
 
 \tableofcontents
 
@@ -35,10 +37,10 @@
 
 \begin{tabular}{|c|l|}
 
-
-\includegraphics[width=1.0\textwidth]{bel.jpg} \\
 \hline
 \multicolumn{2}{|c|}{Gordon Bel} \tabularnewline
+\hline
+\multicolumn{2}{|c|}{\includegraphics[width=260px,height=180px]{Gordon_Bell.jpg}} \\
 \hline
 Datum rođenja & 19.avgust 1934 \\
 \hline
@@ -99,22 +101,19 @@ Bel je bio ko-osnivač Muzeja računara, u Bostonu, Masačusets, zajedno sa svoj
 
 Belov zakon računarskih klasa \cite{bel9} je prvi put opisan 1972. godine sa pojavom nove klase mikroračunara niže cene zasnovane na mikroprocesoru. Uspostavljeni računari tržišne klase uvode se po stalnoj ceni s povećanjem funkcionalnosti i performansi. Napredak tehnologije u poluvodičima, skladištu, interfejsima i mrežama omogućava da se formira nova računarska klasa (platforma) svake decenije kako bi se zadovoljila nova potreba. Svaka nova klasa obično niže cene održava se kao kvazi nezavisna industrija (tržište). Klase uključuju: mejnfrejmove (1960-e), mini-računare (1970-e), umrežene radne stanice i lične računare (1980-e), strukturu pretraživača-veb-servera (1990-e), palm računarstvo (1995), veb usluge (2000-e), konvergenciju mobilnih telefona i računara (2003) i Bežične Senzorske Mreže poznatije kao motes (2004). Bel je predvideo da će se mreže za dom i telo formirati do 2010. godine.
 
-
-
-
-
 \section{Knjige}
 \label{sec:naslov1}
-
 
 \begin{itemize}
 \item (sa Alanom Njuelom) Računarske strukture: Literatura i Primeri (1971, ISBN 0-07-004357-4)
 \item (sa C. Madžom i J. Mek Namarom) Računarsko inženjerstvo (1978, ISBN 0-932376-00-2)
 \item (sa Danom Sjviorekom i Alanom Njuelom) Računarske strukture: Literatura i Primeri (1982, ISBN 0-07-057302-6)
-\item(sa Džimom Gemelom) Celokupno podsećanje: Kako će E-Memorijska Revolucija promeniti sve (2009, ISBN 978-0-525-95134-6)
+\item (sa J. Mek Namarom) Visoko tehnološki poduhvati: Vodič za uspeh u preduzetništvu (1991, ISBN 0-201-56321-5)
+\item (sa Džimom Gemelom) Celokupno podsećanje: Kako će E-Memorijska Revolucija promeniti sve (2009, ISBN 978-0-525-95134-6)
 \item (sa Džimom Gemelom) Tvoj Otpremljeni život: Digitalni put ka boljem pamćenju, zdravlju i produktivnosti (2010, ISBN 978-0-452-29656-5)
-\end{itemize} 
 
+
+\end{itemize} 
 
 \addcontentsline{toc}{section}{Literatura}
 \appendix
@@ -137,15 +136,11 @@ Belov zakon računarskih klasa \cite{bel9} je prvi put opisan 1972. godine sa po
 \end{thebibliography}
 
 \section{Dodatna literatura}
-\begin{description}
-
+\label{sec:naslov1}
 \begin{itemize}
 \item Vilkinson, Alek, "Remember This?" Njujorker, 28. maj 2007., pp. 38–44.
-\end{itemize}
-\end{description}
 
+\end{itemize} 
 
-
-\renewcommand{\refname}{Spoljašnje veze}
 
 \end{document}
